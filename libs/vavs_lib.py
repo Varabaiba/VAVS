@@ -4,9 +4,9 @@ class VA3CDD:
     """Implementation of VAVS.3CDS:24 Compact Date Formatting"""
 
     def __init__(self):
-        self.c_class_vers = '24.A'
+        self.c_class_vers = '25.A'
         #+ Base date for calculations
-        self.c_century_start = date(2001, 1, 1)
+        self.c_century_start = date(1970, 1, 1)
         self.c_base58_alphabet = "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz"
 
     def base58_encode(self, a_int2enc: int) -> str:
